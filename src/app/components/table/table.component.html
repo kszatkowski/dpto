@@ -12,7 +12,9 @@
 			<td>{{item.name}}</td>
 			<td>{{item.category}}</td>
 			<td>{{item.price}}$</td>
-			<td>{{item.quantity}}</td>
+			<td>
+				<app-quantity-checker [quantity]="item.quantity"></app-quantity-checker>
+			</td>
 		</tr>
 	</tbody>
 </table>
