@@ -8,17 +8,11 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>a</td>
-			<td>b</td>
-			<td>c</td>
-			<td>d</td>
-		</tr>
-		<tr>
-			<td>a</td>
-			<td>b</td>
-			<td>c</td>
-			<td>d</td>
+		<tr *ngFor="let item of data">
+			<td>{{item.name}}</td>
+			<td>{{item.category}}</td>
+			<td>{{item.price}}$</td>
+			<td>{{item.quantity}}</td>
 		</tr>
 	</tbody>
 </table>
