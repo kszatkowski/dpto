@@ -28,7 +28,7 @@ describe('QuantityCheckerComponent', () => {
 			component.quantity = 4;
 			fixture.detectChanges();
 			const element: HTMLElement = fixture.debugElement.nativeElement.querySelector('.danger');
-			expect(element.classList).toContain('danger');
+			expect(element.classList).toBeTruthy();
 		});
 
 		it('should not be added when quantity variable is greater than or equal 5', () => {
