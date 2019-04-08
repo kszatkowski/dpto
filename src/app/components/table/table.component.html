@@ -1,0 +1,20 @@
+<table>
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Category</th>
+			<th>Price</th>
+			<th>Quantity</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of data">
+			<td>{{item.name}}</td>
+			<td>{{item.category}}</td>
+			<td>{{item.price}}$</td>
+			<td>
+				<app-quantity-checker [quantity]="item.quantity"></app-quantity-checker>
+			</td>
+		</tr>
+	</tbody>
+</table>
